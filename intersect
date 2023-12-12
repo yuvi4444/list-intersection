@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char * list[] = {"55, 3, 4, 7, 13", "1, 2, 4, 13, 15"};
+    printf("1st element: %s\n", list[0]);
+    printf("2nd element: %s\n", list[1]);
+    char first[] = "0";
+    strcpy(first, list[0]);
+    char *ptr = strtok(first, ", ");
+    printf("firsty: %s\n", ptr);
+    return 0;
+}
